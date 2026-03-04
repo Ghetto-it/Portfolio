@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Guillaume Legrand - Étudiant BTS SISR spécialisé en réseaux et systèmes informatiques">
+    <title>Guillaume Legrand | Portfolio BTS SISR</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">GL</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#parcours" class="nav-link">Parcours</a></li>
+                <li><a href="#bts-sio" class="nav-link">BTS SIO</a></li>
+                <li><a href="#ecole" class="nav-link">École</a></li>
+                <li><a href="#entreprise" class="nav-link">Entreprise</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#veille" class="nav-link">Veille</a></li>
+                <li><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-in">
+                <span class="badge-dot"></span>
+                Disponible en alternance
+            </div>
+            <h1 class="hero-title animate-fade-in-up">
+                <span class="hero-greeting">Bonjour, je suis</span>
+                <span class="hero-name">Guillaume <span class="text-gradient">Legrand</span></span>
+            </h1>
+            <p class="hero-subtitle animate-fade-in-up delay-1">
+                Étudiant <span class="text-blue">BTS SISR</span> passionné par les 
+                <span class="text-red">réseaux</span> et la <span class="text-red">cybersécurité</span>
+            </p>
+            <p class="hero-description animate-fade-in-up delay-2">
+                Je développe des compétences solides dans la gestion des infrastructures informatiques, 
+                la sécurité des réseaux et l'administration des systèmes.
+            </p>
+            <div class="hero-buttons animate-fade-in-up delay-3">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Me contacter</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="cv.pdf" class="btn btn-secondary" download>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    <span>Télécharger mon CV</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual animate-fade-in delay-2">
+            <div class="hero-card">
+                <div class="card-header">
+                    <span class="card-dot red"></span>
+                    <span class="card-dot yellow"></span>
+                    <span class="card-dot green"></span>
+                </div>
+                <div class="card-content">
+                    <code>
+                        <span class="code-keyword">const</span> <span class="code-variable">etudiant</span> = {<br>
+                        &nbsp;&nbsp;<span class="code-property">nom</span>: <span class="code-string">"Guillaume Legrand"</span>,<br>
+                        &nbsp;&nbsp;<span class="code-property">formation</span>: <span class="code-string">"BTS SISR"</span>,<br>
+                        &nbsp;&nbsp;<span class="code-property">entreprise</span>: <span class="code-string">"Elionis"</span>,<br>
+                        &nbsp;&nbsp;<span class="code-property">passion</span>: <span class="code-string">"Réseaux et Sécurité"</span>,<br>
+                        &nbsp;&nbsp;<span class="code-property">status</span>: <span class="code-string">"Alternant"</span><br>
+                        };
+                    </code>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Présentation</span>
+                <h2 class="section-title">À propos de <span class="text-gradient">moi</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-container">
+                    <div class="about-image">
+                        <img src="photo.png" alt="Guillaume Legrand" class="profile-photo">
+                    </div>
+                    <div class="about-decorative">
+                        <div class="deco-line"></div>
+                        <div class="deco-dot"></div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p class="about-text">
+                        Je m'appelle <strong>Guillaume Legrand</strong>, étudiant en <strong>BTS SISR</strong> 
+                        (Services Informatiques aux Organisations). Passionné par le monde des technologies 
+                        et des systèmes informatiques, je m'engage à développer des compétences solides dans 
+                        la gestion des infrastructures informatiques, la sécurité des réseaux et l'administration 
+                        des systèmes.
+                    </p>
+                    <p class="about-text">
+                        Au cours de ma formation, j'ai acquis une expérience pratique dans 
+                        <span class="highlight">l'administration des réseaux</span>, la 
+                        <span class="highlight">gestion des systèmes d'exploitation</span> et la 
+                        <span class="highlight">virtualisation</span>. J'ai également eu l'opportunité de 
+                        travailler sur des projets concrets, comme la mise en place de réseaux locaux ou 
+                        la gestion de bases de données.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2">0</span>
+                            <span class="stat-label">Années de formation</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="8">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Projets réalisés</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parcours Section -->
+    <section class="section section-dark" id="parcours">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Éducation</span>
+                <h2 class="section-title">Mon <span class="text-gradient">Parcours</span></h2>
+                <p class="section-subtitle">
+                    De la réorientation à la passion : mon chemin vers l'informatique
+                </p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-year">2026</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge future">Objectif</div>
+                        <h3 class="timeline-title">Licence en Cybersécurité</h3>
+                        <p class="timeline-location">À déterminer</p>
+                        <p class="timeline-description">
+                            Poursuite d'études envisagée pour approfondir mes connaissances en sécurité informatique.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-year">2024</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge current">En cours</div>
+                        <h3 class="timeline-title">BTS SISR</h3>
+                        <p class="timeline-location">UTEC Avon/Fontainebleau</p>
+                        <p class="timeline-description">
+                            Formation en alternance combinant théorie et pratique pour développer 
+                            mes compétences techniques et professionnelles en administration systèmes et réseaux.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-year">2021</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge completed">Obtenu</div>
+                        <h3 class="timeline-title">Bac Pro RISC</h3>
+                        <p class="timeline-location">Lycée La Fayette</p>
+                        <p class="timeline-description">
+                            Baccalauréat Professionnel Réseaux Informatiques et Systèmes Communicants. 
+                            Découverte de ma passion pour l'informatique et le fonctionnement des réseaux.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-year">2020</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge past">Réorientation</div>
+                        <h3 class="timeline-title">Bac Pro MELEC</h3>
+                        <p class="timeline-location">Lycée La Fayette</p>
+                        <p class="timeline-description">
+                            Première année en Métiers de l'Électricité. Cette expérience m'a permis 
+                            de découvrir ma véritable passion et de me réorienter vers l'informatique.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BTS SIO Section -->
+    <section class="section" id="bts-sio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ma Formation</span>
+                <h2 class="section-title">BTS <span class="text-gradient">SIO</span></h2>
+                <p class="section-subtitle">
+                    Services Informatiques aux Organisations - Une formation complète en informatique
+                </p>
+            </div>
+
+            <div class="bts-intro">
+                <p>
+                    Le <strong>BTS SIO</strong> (Services Informatiques aux Organisations) est un diplôme de niveau Bac+2 
+                    qui forme des professionnels capables de répondre aux besoins informatiques des entreprises. 
+                    Cette formation propose deux spécialités distinctes mais complémentaires.
+                </p>
+            </div>
+
+            <div class="options-container">
+                <!-- Option SLAM -->
+                <div class="option-card slam">
+                    <div class="option-header">
+                        <div class="option-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                        </div>
+                        <h3>Option SLAM</h3>
+                        <span class="option-full">Solutions Logicielles et Applications Métiers</span>
+                    </div>
+                    <div class="option-content">
+                        <p>
+                            L'option SLAM forme des développeurs capables de concevoir, développer et maintenir 
+                            des solutions applicatives.
+                        </p>
+                        <ul class="option-skills">
+                            <li>Développement d'applications (Web, Mobile, Desktop)</li>
+                            <li>Programmation (PHP, Java, Python, JavaScript)</li>
+                            <li>Bases de données (SQL, MySQL, PostgreSQL)</li>
+                            <li>Conception et modélisation (UML, Merise)</li>
+                            <li>Frameworks et CMS</li>
+                        </ul>
+                        <div class="option-jobs">
+                            <h4>Débouchés :</h4>
+                            <span class="job-tag">Développeur Web</span>
+                            <span class="job-tag">Développeur d'applications</span>
+                            <span class="job-tag">Analyste programmeur</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Option SISR - Mise en avant -->
+                <div class="option-card sisr highlighted">
+                    <div class="option-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                        Mon option
+                    </div>
+                    <div class="option-header">
+                        <div class="option-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                                <line x1="6" y1="6" x2="6.01" y2="6"/>
+                                <line x1="6" y1="18" x2="6.01" y2="18"/>
+                            </svg>
+                        </div>
+                        <h3>Option SISR</h3>
+                        <span class="option-full">Solutions d'Infrastructure, Systèmes et Réseaux</span>
+                    </div>
+                    <div class="option-content">
+                        <p>
+                            L'option SISR forme des administrateurs réseaux et systèmes capables de gérer 
+                            et sécuriser les infrastructures informatiques des organisations.
+                        </p>
+                        <ul class="option-skills">
+                            <li>Administration des réseaux (Cisco, routage, switching)</li>
+                            <li>Gestion des systèmes (Windows Server, Linux)</li>
+                            <li>Virtualisation (VMware, Hyper-V, Proxmox)</li>
+                            <li>Cybersécurité (Firewall, VPN, supervision)</li>
+                            <li>Services réseaux (DNS, DHCP, Active Directory)</li>
+                        </ul>
+                        <div class="option-jobs">
+                            <h4>Débouchés :</h4>
+                            <span class="job-tag">Administrateur réseaux</span>
+                            <span class="job-tag">Technicien systèmes</span>
+                            <span class="job-tag">Technicien cybersécurité</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- École Section -->
+    <section class="section" id="ecole">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Formation</span>
+                <h2 class="section-title">Mon École : <span class="text-gradient">UTEC</span></h2>
+                <p class="section-subtitle">
+                    Une école pluridisciplinaire au service des jeunes et des entreprises
+                </p>
+            </div>
+            <div class="school-content">
+                <!-- Photo et Logo de l'école -->
+                <div class="school-visual">
+                    <div class="school-image-container">
+                        <img src="https://www.utec77.fr/sites/default/files/2021-10/avon-ext.jpg" alt="Campus UTEC Avon-Fontainebleau" class="school-photo">
+                        <div class="school-logo-badge">
+                            <img src="https://www.utec77.fr/themes/custom/generic/medias/logo_utec.png" alt="Logo UTEC" class="school-logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="school-info">
+                    <div class="school-card main-school">
+                        <div class="school-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+                        </div>
+                        <h3>À propos de l'UTEC</h3>
+                        <p>
+                            L'UTEC est une école pluridisciplinaire, multi-niveaux, au service des jeunes, 
+                            des familles et des entreprises. Avec près de <strong>40 ans d'expérience</strong> 
+                            dans l'apprentissage, elle est organisée autour d'une équipe pédagogique composée 
+                            essentiellement de professionnels animés par une même vocation : faire partager 
+                            la passion de leur métier.
+                        </p>
+                        <p>
+                            Le campus à proximité de la Gare d'Avon-Fontainebleau est situé dans un cadre verdoyant, 
+                            en bordure de Seine et proche de la forêt de Fontainebleau. Il propose une offre de formation 
+                            diversifiée du CAP au Bac+5 dans 3 domaines : Hôtellerie-Restauration-Tourisme, 
+                            Commerce-Management-Comptabilité-Gestion et Informatique-Technologies Numériques.
+                        </p>
+                    </div>
+                    <div class="school-stats-grid">
+                        <div class="school-stat">
+                            <span class="school-stat-number" data-target="2000">0</span>
+                            <span class="school-stat-label">Jeunes formés / an</span>
+                        </div>
+                        <div class="school-stat">
+                            <span class="school-stat-number" data-target="1500">0</span>
+                            <span class="school-stat-label">Entreprises partenaires</span>
+                        </div>
+                        <div class="school-stat">
+                            <span class="school-stat-number" data-target="40">0</span>
+                            <span class="school-stat-label">Années d'expérience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="school-locations">
+                    <h4 class="locations-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Nos Campus
+                    </h4>
+                    <div class="locations-grid">
+                        <div class="location-card active">
+                            <h5>Avon-Fontainebleau</h5>
+                            <p>1 Rue du Port de Valvins, 77215 Avon</p>
+                            <span class="location-phone">01 60 37 28 40</span>
+                        </div>
+                        <div class="location-card">
+                            <h5>Marne-la-Vallée</h5>
+                            <p>6 Boulevard Olof Palme, 77184 Émerainville</p>
+                            <span class="location-phone">01 60 37 52 25</span>
+                        </div>
+                        <div class="location-card">
+                            <h5>Melun</h5>
+                            <p>Tour Galliéni 49-51 Av. Thiers, 77000 Melun</p>
+                            <span class="location-phone">01 60 37 52 25</span>
+                        </div>
+                        <div class="location-card">
+                            <h5>Provins</h5>
+                            <p>Couvent des Cordelières, 15 Rue André-François Poncet, 77160 Provins</p>
+                            <span class="location-phone">01 60 37 52 25</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entreprise Section -->
+    <section class="section section-dark" id="entreprise">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Alternance</span>
+                <h2 class="section-title">Mon Entreprise : <span class="text-gradient">Elionis</span></h2>
+                <p class="section-subtitle">
+                    Spécialiste en maintenance et solutions informatiques pour les PME
+                </p>
+            </div>
+            <div class="company-content">
+                <div class="company-info">
+                    <div class="company-card main-company">
+                        <div class="company-badges">
+                            <span class="cert-badge">HDS Certifié</span>
+                            <span class="cert-badge">ISO 27001</span>
+                        </div>
+                        <p>
+                            <strong>Elionis</strong> est une entreprise française fondée en <strong>2005</strong>, 
+                            spécialisée dans la maintenance et les solutions informatiques pour les PME et professionnels.
+                            Elle propose des services complets : infogérance, cloud, sauvegarde, messagerie, 
+                            télétravail sécurisé et câblage réseau.
+                        </p>
+                        <p>
+                            Basée en Île-de-France et à Aubagne, elle privilégie la proximité, la réactivité 
+                            et la sécurité des données.
+                        </p>
+                    </div>
+                    <div class="company-stats">
+                        <div class="company-stat">
+                            <span class="company-stat-number" data-target="1550">0</span>
+                            <span class="company-stat-label">PC infogérés</span>
+                        </div>
+                        <div class="company-stat">
+                            <span class="company-stat-number" data-target="3188">0</span>
+                            <span class="company-stat-label">Emails hébergés</span>
+                        </div>
+                        <div class="company-stat">
+                            <span class="company-stat-number" data-target="132">0</span><span class="company-stat-unit">To</span>
+                            <span class="company-stat-label">Données sauvegardées</span>
+                        </div>
+                        <div class="company-stat">
+                            <span class="company-stat-number" data-target="20">0</span>
+                            <span class="company-stat-label">Années d'expérience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="company-services">
+                    <h4 class="services-title">Services proposés</h4>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <h5>Sauvegarde externalisée</h5>
+                            <p>Protocole SSH, communications sécurisées, rapport journalier automatisé.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon blue">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                                </svg>
+                            </div>
+                            <h5>VPN & Bureau à distance</h5>
+                            <p>Connexion sécurisée SSL, compatible smartphones et tablettes.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <h5>Hébergement mail</h5>
+                            <p>Anti-spam, antivirus, sauvegarde quotidienne, archivage 30 jours.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon blue">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                                </svg>
+                            </div>
+                            <h5>Maintenance IT</h5>
+                            <p>Assistance technique, suivi personnalisé, sécurisation des systèmes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-missions">
+                    <h4 class="missions-title">Mes missions en entreprise</h4>
+                    <div class="missions-content">
+                        <p>
+                            Dans le cadre de mon alternance, mes missions sont variées et enrichissantes :
+                        </p>
+                        <ul class="missions-list">
+                            <li>Gestion du <strong>ticketing</strong> et assurer la <strong>hotline</strong></li>
+                            <li>Interventions directes chez les clients pour résoudre des <strong>pannes réseau</strong></li>
+                            <li>Installation et mise en place d'<strong>infrastructures réseau</strong> (baies de brassage, switchs, onduleurs)</li>
+                            <li>Résolution de dysfonctionnements sur les <strong>postes de travail</strong></li>
+                        </ul>
+                    </div>
+                    <div class="company-locations">
+                        <div class="company-location">
+                            <span class="location-label">Bureau 94</span>
+                            <span>77 bis Av. de Pince-Vent, 94490 Ormesson-sur-Marne</span>
+                        </div>
+                        <div class="company-location">
+                            <span class="location-label">Bureau 77</span>
+                            <span>Centre Commercial du Parc, 77150 Lésigny</span>
+                        </div>
+                        <div class="company-location">
+                            <span class="location-label">Bureau 13</span>
+                            <span>170 Av. du Pastre, 13400 Aubagne</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Mes <span class="text-gradient">Compétences</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-icon blue">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                            <line x1="6" y1="6" x2="6.01" y2="6"/>
+                            <line x1="6" y1="18" x2="6.01" y2="18"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Réseaux</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Routage (Statique, Dynamique, Inter-VLAN, NAT)</span>
+                        <span class="skill-tag">Protocoles (TCP/IP, SMB, SMTP, IMAP, SSL/TLS, SSH)</span>
+                        <span class="skill-tag">Câblage (T568A, T568B, Fibre optique)</span>
+                        <span class="skill-tag">Commutateurs (Niveau 1-2-3, STP, QoS)</span>
+                        <span class="skill-tag">Haute disponibilité (RAID, Redondance, Cluster)</span>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Configuration Cisco</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar blue">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">TCP/IP & Protocoles</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar blue">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">VLAN & Routage</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar blue">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-icon red">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Cybersécurité</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Firewall PfSense (VPN, DMZ, Filtrage, Port Forwarding)</span>
+                        <span class="skill-tag">Chiffrement SSL/TLS</span>
+                        <span class="skill-tag">Segmentation réseau (VLAN, DMZ)</span>
+                        <span class="skill-tag">Antivirus (ESET, Malwarebytes, Norton)</span>
+                        <span class="skill-tag">Audits de sécurité & Tests de pénétration</span>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Pare-feu & Filtrage</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar red">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">VPN & Chiffrement</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-bar red">
+                                <div class="skill-progress" data-width="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Audits & Pentest</span>
+                                <span class="skill-percent">55%</span>
+                            </div>
+                            <div class="skill-bar red">
+                                <div class="skill-progress" data-width="55"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Systèmes</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Virtualisation (Hyper-V, VMware, Proxmox, VirtualBox)</span>
+                        <span class="skill-tag">NAS (TrueNAS, OpenMediaVault, Synology DSM)</span>
+                        <span class="skill-tag">Windows Server & Active Directory</span>
+                        <span class="skill-tag">Linux (Debian, Ubuntu)</span>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Windows Server</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Linux (Debian/Ubuntu)</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Virtualisation</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-icon gradient">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Automatisation</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Stratégies de groupe (GPO)</span>
+                        <span class="skill-tag">Scripts PowerShell</span>
+                        <span class="skill-tag">Scripts Bash</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Active Directory (Gestion utilisateurs)</span>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Active Directory</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar gradient">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PowerShell / Bash</span>
+                                <span class="skill-percent">60%</span>
+                            </div>
+                            <div class="skill-bar gradient">
+                                <div class="skill-progress" data-width="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">50%</span>
+                            </div>
+                            <div class="skill-bar gradient">
+                                <div class="skill-progress" data-width="50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Section -->
+    <section class="section section-dark" id="projets">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Réalisations</span>
+                <h2 class="section-title">Mes <span class="text-gradient">Projets</span></h2>
+                <p class="section-subtitle">
+                    Des projets concrets réalisés en école et en entreprise
+                </p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="projects-tabs">
+                <button class="tab-btn active" data-tab="school">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                    </svg>
+                    Projets École
+                </button>
+                <button class="tab-btn" data-tab="company">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
+                    Projets Entreprise
+                </button>
+            </div>
+
+            <!-- School Projects -->
+            <div class="tab-content active" id="school">
+                <div class="projects-intro">
+                    <p>
+                        Les projets à l'école sont une véritable opportunité pour mettre en pratique ce que j'apprends en cours. 
+                        Ils me permettent de tester différentes approches, de faire des erreurs et d'en tirer des leçons. 
+                        Ces expériences m'offrent un véritable terrain de jeu où je peux expérimenter sans pression.
+                    </p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Projet Serveur Mail -->
+                    <div class="project-card" onclick="openModal('modal-mail')">
+                        <div class="project-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <h4>Serveur Mail Sécurisé</h4>
+                        <p>Déploiement d'une infrastructure de messagerie complète avec Postfix, Dovecot et Bind9.</p>
+                        <div class="project-tags">
+                            <span>Postfix</span>
+                            <span>Dovecot</span>
+                            <span>DNS</span>
+                            <span>SPF/DKIM</span>
+                        </div>
+                        <span class="project-link">Voir détails →</span>
+                    </div>
+
+                    <!-- Projet DDoS VoIP -->
+                    <div class="project-card" onclick="openModal('modal-ddos')">
+                        <div class="project-icon red">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                                <line x1="12" y1="9" x2="12" y2="13"/>
+                                <line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                        </div>
+                        <h4>Test DDoS sur VoIP</h4>
+                        <p>Simulation d'attaque DDoS sur serveur FreePBX pour tester la résistance de l'infrastructure.</p>
+                        <div class="project-tags">
+                            <span>FreePBX</span>
+                            <span>SIP</span>
+                            <span>Sécurité</span>
+                            <span>Linux</span>
+                        </div>
+                        <span class="project-link">Voir détails →</span>
+                    </div>
+
+                    <!-- Projet Infrastructure Réseau -->
+                    <div class="project-card" onclick="openModal('modal-infra')">
+                        <div class="project-icon blue">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                                <line x1="6" y1="6" x2="6.01" y2="6"/>
+                                <line x1="6" y1="18" x2="6.01" y2="18"/>
+                            </svg>
+                        </div>
+                        <h4>Infrastructure Réseau</h4>
+                        <p>Conception d'une infrastructure complète avec pare-feu, VLAN, serveurs Windows/Linux et DMZ.</p>
+                        <div class="project-tags">
+                            <span>VLAN</span>
+                            <span>PfSense</span>
+                            <span>AD</span>
+                            <span>DNS/DHCP</span>
+                        </div>
+                        <span class="project-link">Voir détails →</span>
+                    </div>
+
+                    <!-- Projet GLPI -->
+                    <div class="project-card" onclick="openModal('modal-glpi')">
+                        <div class="project-icon gradient">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <h4>Serveur GLPI</h4>
+                        <p>Déploiement d'une solution ITSM pour la gestion de parc informatique.</p>
+                        <div class="project-tags">
+                            <span>GLPI</span>
+                            <span>LAMP</span>
+                            <span>ITSM</span>
+                            <span>Inventaire</span>
+                        </div>
+                        <span class="project-link">Voir détails →</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Company Projects -->
+            <div class="tab-content" id="company">
+                <div class="projects-intro">
+                    <p>
+                        En entreprise, j'applique mes connaissances dans un contexte professionnel réel. 
+                        Ces missions me permettent de développer mon autonomie et ma capacité à résoudre 
+                        des problèmes concrets pour les clients.
+                    </p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Maintenance Parc -->
+                    <div class="project-card" onclick="openModal('modal-maintenance')">
+                        <div class="project-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                            </svg>
+                        </div>
+                        <h4>Maintenance Parc Informatique</h4>
+                        <p>Veille cybersécurité, mises à jour systèmes, interventions terrain pour pannes.</p>
+                        <div class="project-tags">
+                            <span>Veille Cyber</span>
+                            <span>Updates</span>
+                            <span>Dépannage</span>
+                        </div>
+                        <span class="project-link">Voir détails →</span>
+                    </div>
+
+                    <!-- Infrastructure Physique -->
+                    <div class="project-card" onclick="openModal('modal-physique')">
+                        <div class="project-icon blue">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                            </svg>
+                        </div>
+                        <h4>Infrastructure Physique</h4>
+                        <p>Câblage RJ45, mise en place de baies de brassage, installation d'équipements réseau.</p>
+                        <div class="project-tags">
+                            <span>Câblage</span>
+                            <span>Baie</span>
+                            <span>Switch</span>
+                            <span>Tests</span>
+                        </div>
+                        <span class="project-link">Voir détails →</span>
+                    </div>
+
+                    <!-- Hotline -->
+                    <div class="project-card" onclick="openModal('modal-hotline')">
+                        <div class="project-icon red">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <h4>Hotline & Ticketing</h4>
+                        <p>Support technique, gestion des priorités, suivi des incidents jusqu'à résolution.</p>
+                        <div class="project-tags">
+                            <span>Support N1/N2</span>
+                            <span>ITSM</span>
+                            <span>Communication</span>
+                        </div>
+                        <span class="project-link">Voir détails →</span>
+                    </div>
+
+                    <!-- Installation Postes -->
+                    <div class="project-card" onclick="openModal('modal-postes')">
+                        <div class="project-icon gradient">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <h4>Installation de Postes</h4>
+                        <p>Montage PC, assemblage composants, gestion d'inventaire avec QR codes.</p>
+                        <div class="project-tags">
+                            <span>Assemblage</span>
+                            <span>Hardware</span>
+                            <span>Inventaire</span>
+                        </div>
+                        <span class="project-link">Voir détails →</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <!-- Modal Serveur Mail -->
+    <div class="modal" id="modal-mail">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-mail')">&times;</button>
+            <div class="modal-header">
+                <h3>Messagerie : Mise en Place et Tests de Sécurité</h3>
+                <span class="modal-badge">Projet École</span>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Dans ce projet, j'ai déployé une infrastructure complète de messagerie pour le domaine atlas.fr. 
+                    Elle comprend un serveur DNS Bind9 dédié, un serveur mail sécurisé avec Postfix pour l'envoi 
+                    et Dovecot pour la réception, ainsi que la configuration des enregistrements SPF, DKIM et DMARC 
+                    pour renforcer l'authenticité des mails.
+                </p>
+                <div class="modal-skills">
+                    <div class="modal-skill">
+                        <h5>Administration Système Linux</h5>
+                        <p>Installation et configuration de Postfix, Dovecot, Bind9. Sécurisation des connexions SSH. Utilisation de rkhunter pour la détection de rootkits.</p>
+                    </div>
+                    <div class="modal-skill">
+                        <h5>Sécurisation des Services</h5>
+                        <p>Implémentation SPF, DKIM, DMARC. Chiffrement TLS. Déploiement de Rspamd et tests de spoofing.</p>
+                    </div>
+                    <div class="modal-skill">
+                        <h5>Gestion Avancée du DNS</h5>
+                        <p>Création de zone DNS dédiée, enregistrements A, MX, TXT. Séparation des rôles DNS et mail.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal DDoS -->
+    <div class="modal" id="modal-ddos">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-ddos')">&times;</button>
+            <div class="modal-header">
+                <h3>Test DDoS sur VoIP</h3>
+                <span class="modal-badge red">Sécurité</span>
+            </div>
+            <div class="modal-body">
+                <p>
+                    J'ai réalisé un test de déni de service (DDoS) sur un serveur de téléphonie IP (FreePBX). 
+                    L'objectif était de saturer le système téléphonique en générant une forte charge de requêtes SIP, 
+                    afin de tester sa capacité à résister à une attaque.
+                </p>
+                <div class="modal-skills">
+                    <div class="modal-skill">
+                        <h5>Sécurité Réseau</h5>
+                        <p>Simulation d'attaque DDoS SIP pour évaluer la résistance d'un serveur VoIP et comprendre les mesures de protection.</p>
+                    </div>
+                    <div class="modal-skill">
+                        <h5>Outils Linux</h5>
+                        <p>Utilisation de sipcmd et sipp pour générer un trafic malveillant ciblé.</p>
+                    </div>
+                    <div class="modal-skill">
+                        <h5>Administration IPBX</h5>
+                        <p>Installation et configuration préalable du serveur FreePBX.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Infrastructure -->
+    <div class="modal" id="modal-infra">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-infra')">&times;</button>
+            <div class="modal-header">
+                <h3>Conception d'une Infrastructure Réseau</h3>
+                <span class="modal-badge blue">Réseau</span>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Création d'une infrastructure réseau complète pour une entreprise : pare-feu, routeur, 
+                    plusieurs VLAN pour segmenter le trafic, serveur Windows (AD), serveur Linux (DNS/DHCP), 
+                    serveur web en DMZ, NAS et serveur de téléphonie IP FreePBX.
+                </p>
+                <div class="modal-skills">
+                    <div class="modal-skill">
+                        <h5>Administration Réseau</h5>
+                        <p>Configuration VLAN, routage inter-VLAN via routeur Linux, services DHCP et DNS, plan d'adressage IP complet.</p>
+                    </div>
+                    <div class="modal-skill">
+                        <h5>Sécurité des Réseaux</h5>
+                        <p>Pare-feu nftables, filtrage par port, isolation du serveur web dans une DMZ.</p>
+                    </div>
+                    <div class="modal-skill">
+                        <h5>Haute Disponibilité DNS</h5>
+                        <p>Copie de la zone DNS Active Directory sur Bind9 pour redondance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal GLPI -->
+    <div class="modal" id="modal-glpi">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-glpi')">&times;</button>
+            <div class="modal-header">
+                <h3>Déploiement d'un Serveur GLPI</h3>
+                <span class="modal-badge gradient">ITSM</span>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Installation et configuration de GLPI sur serveur Linux pour mettre en place une solution 
+                    de gestion de parc informatique (ITSM). Intégration d'un poste client Windows 10 dans l'inventaire.
+                </p>
+                <div class="modal-skills">
+                    <div class="modal-skill">
+                        <h5>Administration Linux</h5>
+                        <p>Installation serveur LAMP/LEMP, configuration Apache et MariaDB.</p>
+                    </div>
+                    <div class="modal-skill">
+                        <h5>Gestion de Parc</h5>
+                        <p>Inventaire de postes clients, gestion des ressources matérielles et logicielles.</p>
+                    </div>
+                    <div class="modal-skill">
+                        <h5>Déploiement Web</h5>
+                        <p>Configuration base de données, droits d'accès et interface d'administration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Maintenance -->
+    <div class="modal" id="modal-maintenance">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-maintenance')">&times;</button>
+            <div class="modal-header">
+                <h3>Maintenance d'un Parc Informatique</h3>
+                <span class="modal-badge">Entreprise</span>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Veille active en cybersécurité pour identifier les failles récentes, mises à jour Windows, 
+                    logiciels, pilotes et firmwares. Interventions physiques chez les clients pour diagnostiquer 
+                    et résoudre les pannes.
+                </p>
+                <div class="modal-skills">
+                    <div class="modal-skill">
+                        <h5>Veille Cybersécurité</h5>
+                        <p>Surveillance des alertes de sécurité, recommandation de correctifs adaptés.</p>
+                    </div>
+                    <div class="modal-skill">
+                        <h5>Gestion des Mises à Jour</h5>
+                        <p>Windows Update, logiciels, drivers et firmwares pour sécurité et stabilité.</p>
+                    </div>
+                    <div class="modal-skill">
+                        <h5>Support & Dépannage</h5>
+                        <p>Intervention physique ou à distance pour résoudre les pannes réseau ou matériel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Infrastructure Physique -->
+    <div class="modal" id="modal-physique">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-physique')">&times;</button>
+            <div class="modal-header">
+                <h3>Mise en Place Infrastructure Physique</h3>
+                <span class="modal-badge blue">Réseau</span>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Réalisation d'une infrastructure réseau physique complète : câblage RJ45 côté mur et baie, 
+                    mise en place de la baie de brassage, installation des équipements réseau et tests de connectivité.
+                </p>
+                <div class="modal-skills">
+                    <div class="modal-skill">
+                        <h5>Câblage des Prises</h5>
+                        <p>Câblage RJ45 côté mur et bandeau de brassage selon normes T568A/B.</p>
+                    </div>
+                    <div class="modal-skill">
+                        <h5>Mise en Place de la Baie</h5>
+                        <p>Installation et organisation de la baie de brassage.</p>
+                    </div>
+                    <div class="modal-skill">
+                        <h5>Installation Réseau</h5>
+                        <p>Installation switchs, routeurs et brassage des câbles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Hotline -->
+    <div class="modal" id="modal-hotline">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-hotline')">&times;</button>
+            <div class="modal-header">
+                <h3>Gestion Hotline & Support Ticketing</h3>
+                <span class="modal-badge red">Support</span>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Support technique via ticketing et hotline téléphonique. Analyse des demandes, 
+                    réponse selon priorité, suivi des tickets jusqu'à résolution complète.
+                </p>
+                <div class="modal-skills">
+                    <div class="modal-skill">
+                        <h5>Communication Technique</h5>
+                        <p>Reformulation et explication de solutions claires aux utilisateurs non-techniciens.</p>
+                    </div>
+                    <div class="modal-skill">
+                        <h5>Gestion des Priorités</h5>
+                        <p>Classement des tickets par urgence et traitement selon délais et impacts métier.</p>
+                    </div>
+                    <div class="modal-skill">
+                        <h5>Utilisation ITSM</h5>
+                        <p>Maîtrise d'un logiciel de ticketing pour suivre et documenter les incidents.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Installation Postes -->
+    <div class="modal" id="modal-postes">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-postes')">&times;</button>
+            <div class="modal-header">
+                <h3>Montage et Préparation de Postes Clients</h3>
+                <span class="modal-badge gradient">Hardware</span>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Montage complet d'ordinateurs à partir de composants choisis, installation carte mère, 
+                    processeur, RAM, alimentation, câble management. Ajout de stickers et QR codes pour l'inventaire.
+                </p>
+                <div class="modal-skills">
+                    <div class="modal-skill">
+                        <h5>Assemblage Matériel</h5>
+                        <p>Montage PC complet : CPU, RAM, carte mère, alimentation, gestion thermique.</p>
+                    </div>
+                    <div class="modal-skill">
+                        <h5>Gestion d'Inventaire</h5>
+                        <p>Mise en place de stickers et QR codes pour suivi efficace du parc.</p>
+                    </div>
+                    <div class="modal-skill">
+                        <h5>Rigueur et Méthode</h5>
+                        <p>Travail précis et structuré conforme aux standards de l'entreprise.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Veille Section -->
+    <section class="section" id="veille">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Actualités</span>
+                <h2 class="section-title">Ma <span class="text-gradient">Veille Technologique</span></h2>
+                <p class="section-subtitle">
+                    Contenus mis à jour en temps réel grâce aux flux RSS pour rester informé des dernières actualités du secteur
+                </p>
+            </div>
+
+            <!-- Veille Tabs -->
+            <div class="veille-tabs">
+                <button class="veille-tab-btn active" data-veille="cyber">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                    Cybersécurité
+                </button>
+                <button class="veille-tab-btn" data-veille="infra">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                        <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                        <line x1="6" y1="6" x2="6.01" y2="6"/>
+                        <line x1="6" y1="18" x2="6.01" y2="18"/>
+                    </svg>
+                    Infrastructures IT
+                </button>
+                <button class="veille-tab-btn" data-veille="ia">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
+                        <circle cx="7.5" cy="14.5" r="1.5"/>
+                        <circle cx="16.5" cy="14.5" r="1.5"/>
+                    </svg>
+                    Intelligence Artificielle
+                </button>
+                <button class="veille-tab-btn" data-veille="quantum">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M12 2v4"/>
+                        <path d="M12 18v4"/>
+                        <path d="M4.93 4.93l2.83 2.83"/>
+                        <path d="M16.24 16.24l2.83 2.83"/>
+                        <path d="M2 12h4"/>
+                        <path d="M18 12h4"/>
+                        <path d="M4.93 19.07l2.83-2.83"/>
+                        <path d="M16.24 7.76l2.83-2.83"/>
+                    </svg>
+                    Informatique Quantique
+                </button>
+            </div>
+
+            <!-- Veille Content -->
+            <div class="veille-content">
+                <!-- Cybersécurité -->
+                <div class="veille-panel active" id="veille-cyber">
+                    <div class="veille-header">
+                        <div class="veille-icon red">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <div class="veille-info">
+                            <h3>Cybersécurité - Vulnérabilités et Menaces</h3>
+                            <p>Actualités sur les failles de sécurité, les cyberattaques et les mesures de protection</p>
+                        </div>
+                    </div>
+                    <div class="rss-feed" id="feed-cyber">
+                        <div class="feed-loading">
+                            <div class="spinner"></div>
+                            <span>Chargement des actualités...</span>
+                        </div>
+                    </div>
+                    <div class="veille-sources">
+                        <h4>Sources RSS :</h4>
+                        <div class="sources-list">
+                            <a href="https://www.cert.ssi.gouv.fr/feed/" target="_blank" class="source-badge">CERT-FR</a>
+                            <a href="https://www.zataz.com/feed/" target="_blank" class="source-badge">ZATAZ</a>
+                            <a href="https://www.bleepingcomputer.com/feed/" target="_blank" class="source-badge">BleepingComputer</a>
+                            <a href="https://feeds.feedburner.com/TheHackersNews" target="_blank" class="source-badge">The Hacker News</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infrastructures IT -->
+                <div class="veille-panel" id="veille-infra">
+                    <div class="veille-header">
+                        <div class="veille-icon blue">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                                <line x1="6" y1="6" x2="6.01" y2="6"/>
+                                <line x1="6" y1="18" x2="6.01" y2="18"/>
+                            </svg>
+                        </div>
+                        <div class="veille-info">
+                            <h3>Infrastructures et Technologies de l'Information</h3>
+                            <p>Nouveautés sur les réseaux, serveurs, cloud et technologies d'entreprise</p>
+                        </div>
+                    </div>
+                    <div class="rss-feed" id="feed-infra">
+                        <div class="feed-loading">
+                            <div class="spinner"></div>
+                            <span>Chargement des actualités...</span>
+                        </div>
+                    </div>
+                    <div class="veille-sources">
+                        <h4>Sources RSS :</h4>
+                        <div class="sources-list">
+                            <a href="https://www.it-connect.fr/feed/" target="_blank" class="source-badge">IT-Connect</a>
+                            <a href="https://www.lemondeinformatique.fr/flux-rss/thematique/infrastructure/rss.xml" target="_blank" class="source-badge">Le Monde Informatique</a>
+                            <a href="https://www.silicon.fr/feed" target="_blank" class="source-badge">Silicon</a>
+                            <a href="https://www.networkworld.com/index.rss" target="_blank" class="source-badge">NetworkWorld</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intelligence Artificielle -->
+                <div class="veille-panel" id="veille-ia">
+                    <div class="veille-header">
+                        <div class="veille-icon gradient">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
+                                <circle cx="7.5" cy="14.5" r="1.5"/>
+                                <circle cx="16.5" cy="14.5" r="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="veille-info">
+                            <h3>Intelligence Artificielle</h3>
+                            <p>Avancées en IA, machine learning, deep learning et leurs applications</p>
+                        </div>
+                    </div>
+                    <div class="rss-feed" id="feed-ia">
+                        <div class="feed-loading">
+                            <div class="spinner"></div>
+                            <span>Chargement des actualités...</span>
+                        </div>
+                    </div>
+                    <div class="veille-sources">
+                        <h4>Sources RSS :</h4>
+                        <div class="sources-list">
+                            <a href="https://www.actuia.com/feed/" target="_blank" class="source-badge">ActuIA</a>
+                            <a href="https://www.lebigdata.fr/feed" target="_blank" class="source-badge">LeBigData</a>
+                            <a href="https://news.mit.edu/rss/topic/artificial-intelligence2" target="_blank" class="source-badge">MIT AI News</a>
+                            <a href="https://openai.com/blog/rss.xml" target="_blank" class="source-badge">OpenAI Blog</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Informatique Quantique -->
+                <div class="veille-panel" id="veille-quantum">
+                    <div class="veille-header">
+                        <div class="veille-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 2v4"/>
+                                <path d="M12 18v4"/>
+                                <path d="M4.93 4.93l2.83 2.83"/>
+                                <path d="M16.24 16.24l2.83 2.83"/>
+                                <path d="M2 12h4"/>
+                                <path d="M18 12h4"/>
+                                <path d="M4.93 19.07l2.83-2.83"/>
+                                <path d="M16.24 7.76l2.83-2.83"/>
+                            </svg>
+                        </div>
+                        <div class="veille-info">
+                            <h3>Informatique Quantique</h3>
+                            <p>Évolutions des ordinateurs quantiques et leurs impacts sur l'informatique</p>
+                        </div>
+                    </div>
+                    <div class="rss-feed" id="feed-quantum">
+                        <div class="feed-loading">
+                            <div class="spinner"></div>
+                            <span>Chargement des actualités...</span>
+                        </div>
+                    </div>
+                    <div class="veille-sources">
+                        <h4>Sources RSS :</h4>
+                        <div class="sources-list">
+                            <a href="https://thequantuminsider.com/feed/" target="_blank" class="source-badge">The Quantum Insider</a>
+                            <a href="https://quantumcomputingreport.com/feed/" target="_blank" class="source-badge">Quantum Computing Report</a>
+                            <a href="https://www.sciencedaily.com/rss/computers_math/quantum_computers.xml" target="_blank" class="source-badge">Science Daily</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Méthode de veille -->
+            <!-- Explication technique du collecteur RSS -->
+            <div class="rss-technical">
+                <h4>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 11a9 9 0 0 1 9 9"/>
+                        <path d="M4 4a16 16 0 0 1 16 16"/>
+                        <circle cx="5" cy="19" r="1"/>
+                    </svg>
+                    Comment fonctionne mon collecteur de flux RSS ?
+                </h4>
+                
+                <div class="rss-explanation">
+                    <div class="rss-step">
+                        <div class="rss-step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <text x="12" y="16" text-anchor="middle" fill="currentColor" stroke="none" font-size="10" font-weight="bold">1</text>
+                            </svg>
+                        </div>
+                        <div class="rss-step-content">
+                            <h5>Qu'est-ce qu'un flux RSS ?</h5>
+                            <p>Un <strong>flux RSS</strong> (Really Simple Syndication) est un fichier XML mis à jour automatiquement par un site web. Il contient les derniers articles publiés avec leur titre, date, description et lien. C'est un standard utilisé par la plupart des sites d'actualités.</p>
+                        </div>
+                    </div>
+
+                    <div class="rss-step">
+                        <div class="rss-step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <text x="12" y="16" text-anchor="middle" fill="currentColor" stroke="none" font-size="10" font-weight="bold">2</text>
+                            </svg>
+                        </div>
+                        <div class="rss-step-content">
+                            <h5>Le problème : les restrictions CORS</h5>
+                            <p>Les navigateurs web bloquent les requêtes vers d'autres domaines pour des raisons de sécurité (politique <strong>CORS</strong> - Cross-Origin Resource Sharing). On ne peut donc pas directement récupérer un flux RSS depuis JavaScript dans un navigateur.</p>
+                        </div>
+                    </div>
+
+                    <div class="rss-step">
+                        <div class="rss-step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <text x="12" y="16" text-anchor="middle" fill="currentColor" stroke="none" font-size="10" font-weight="bold">3</text>
+                            </svg>
+                        </div>
+                        <div class="rss-step-content">
+                            <h5>La solution : l'API rss2json.com</h5>
+                            <p>J'utilise l'API gratuite <strong>rss2json.com</strong> comme intermédiaire. Cette API récupère le flux RSS côté serveur, le convertit en format <strong>JSON</strong> (lisible par JavaScript), puis me renvoie les données. Cela contourne les restrictions CORS.</p>
+                        </div>
+                    </div>
+
+                    <div class="rss-step">
+                        <div class="rss-step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <text x="12" y="16" text-anchor="middle" fill="currentColor" stroke="none" font-size="10" font-weight="bold">4</text>
+                            </svg>
+                        </div>
+                        <div class="rss-step-content">
+                            <h5>Affichage dynamique</h5>
+                            <p>Les articles sont ensuite <strong>triés par date</strong> (les plus récents en premier), formatés et affichés dynamiquement dans l'interface. Un système de <strong>données de secours</strong> garantit l'affichage même si l'API est indisponible.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rss-schema">
+                    <h5>Schéma de fonctionnement</h5>
+                    <div class="schema-flow">
+                        <div class="schema-box">
+                            <div class="schema-icon">🌐</div>
+                            <span>Mon Portfolio</span>
+                            <small>JavaScript</small>
+                        </div>
+                        <div class="schema-arrow">
+                            <span>1. Requête</span>
+                            <svg width="40" height="24" viewBox="0 0 40 24">
+                                <path d="M0 12 L30 12 M25 6 L32 12 L25 18" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <div class="schema-box api">
+                            <div class="schema-icon">⚡</div>
+                            <span>API rss2json</span>
+                            <small>Convertit XML → JSON</small>
+                        </div>
+                        <div class="schema-arrow">
+                            <span>2. Récupère</span>
+                            <svg width="40" height="24" viewBox="0 0 40 24">
+                                <path d="M0 12 L30 12 M25 6 L32 12 L25 18" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <div class="schema-box source">
+                            <div class="schema-icon">📰</div>
+                            <span>Sources RSS</span>
+                            <small>CERT-FR, ZATAZ...</small>
+                        </div>
+                    </div>
+                    <div class="schema-return">
+                        <svg width="100%" height="40" viewBox="0 0 600 40">
+                            <path d="M500 5 L500 25 L100 25 L100 35 M105 30 L100 38 L95 30" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                        <span>3. Retourne les données JSON formatées</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Travaillons <span class="text-gradient">Ensemble</span></h2>
+                <p class="section-subtitle">
+                    Vous avez un projet ou une opportunité ? N'hésitez pas à me contacter !
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <a href="/cdn-cgi/l/email-protection#6205170b0e0e03170f074c0e070510030c0622070f030b0e4c010d0f" class="contact-value"><span class="__cf_email__" data-cfemail="6a0d1f0306060b1f070f44060f0d180b040e2a0f070b030644090507">[email&#160;protected]</span></a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Localisation</span>
+                            <span class="contact-value">Île-de-France, France</span>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">LinkedIn</span>
+                            <a href="#" class="contact-value">Guillaume Legrand</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required placeholder="Votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Sujet de votre message">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Envoyer le message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">GL</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">
+                    © 2024 Guillaume Legrand. Portfolio réalisé avec passion.
+                </p>
+                <div class="footer-links">
+                    <a href="#hero">Accueil</a>
+                    <a href="#about">À propos</a>
+                    <a href="#bts-sio">BTS SIO</a>
+                    <a href="#ecole">École</a>
+                    <a href="#entreprise">Entreprise</a>
+                    <a href="#projets">Projets</a>
+                    <a href="#veille">Veille</a>
+                    <a href="#contact">Contact</a>                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
