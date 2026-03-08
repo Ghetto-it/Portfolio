@@ -388,14 +388,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
             // Get form data
             const formData = new FormData(contactForm);
             const data = Object.fromEntries(formData);
             
             // Simple validation
             if (!data.name || !data.email || !data.message) {
+                e.preventDefault();
                 showNotification('Veuillez remplir tous les champs obligatoires.', 'error');
                 return;
             }
@@ -403,22 +402,15 @@ document.addEventListener('DOMContentLoaded', function() {
             // Email validation
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(data.email)) {
+                e.preventDefault();
                 showNotification('Veuillez entrer une adresse email valide.', 'error');
                 return;
             }
             
-            // Simulate form submission
+            // Si tout est valide, laisser le formulaire s'envoyer
             const submitBtn = contactForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
             submitBtn.innerHTML = '<span>Envoi en cours...</span>';
             submitBtn.disabled = true;
-            
-            setTimeout(() => {
-                showNotification('Message envoyé avec succès ! Je vous répondrai rapidement.', 'success');
-                contactForm.reset();
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-            }, 1500);
         });
     }
 
